@@ -351,3 +351,25 @@ If this guide helped you, please star the repository!
 **Built with ❤️ for the Kubernetes community**
 
 **Questions?** Open an issue or discussion!
+
+## 📸 Longhorn UI Overview
+
+After migration, you can monitor your volumes through the Longhorn UI:
+
+### Dashboard
+All volumes healthy with distributed storage across 4 nodes:
+
+![Longhorn Dashboard](docs/images/longhorn-dashboard.png)
+
+### Nodes View
+Replica distribution across the cluster:
+
+![Longhorn Nodes](docs/images/longhorn-nodes.png)
+
+### Volume Details
+Each volume has 3 replicas for high availability:
+
+![Volume Replicas](docs/images/longhorn-volume-replicas.png)
+
+All replicas are healthy and running on different nodes, providing protection against node failures.
+
