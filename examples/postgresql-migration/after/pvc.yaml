@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: postgres-pvc
+  namespace: your-app
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: longhorn  # Longhorn dynamic provisioning
+  resources:
+    requests:
+      storage: 5Gi
+  # volumeName removed - Longhorn creates PV automatically
